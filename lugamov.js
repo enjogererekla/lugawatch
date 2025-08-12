@@ -1,5 +1,5 @@
 console.log("Welcome to Luga Watch");
-let eyes = false;
+let eyes = true;
 function __markPost() {
   if (!eyes) {
     return
