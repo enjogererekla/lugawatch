@@ -1,0 +1,16 @@
+{
+    "name": "Luga Watch Free",
+    "short_name": "Luga Movies",
+    "start_url": "https://www.lugawatch.com/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+        
+        {
+            "src": "lugawatch.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
