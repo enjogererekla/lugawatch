@@ -9,14 +9,12 @@ function __markPost() {
   if (!runkDiv) return;
 
   // If it's a series with episodes
-  if (serie && Array.isArray(episodes) && episodes.length > 0) {
-    episodes.forEach(ep => {
-      createEpisodePlayer(ep.watch_from, ep.title, runkDiv);
-    });
-  } else {
-    // Default single movie
-    createEpisodePlayer(str, "MOVIE", runkDiv);
-  }
+if (typeof serie !== "undefined" && Array.isArray(typeof episodes !== "undefined" ? episodes : []) && episodes.length) {
+  episodes.forEach(ep => createEpisodePlayer(ep.watch_from, ep.title, runkDiv));
+} else {
+  createEpisodePlayer(str, "MOVIE", runkDiv);
+}
+
 }
 
 function createEpisodePlayer(src, title, container) {
