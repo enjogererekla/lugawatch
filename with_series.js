@@ -3,6 +3,7 @@ let eyes = true;
 
 function __markPost() {
   if (!eyes) return;
+  console.log("Lugawatch!");
 
   const runkDiv = document.getElementById("runk");
   if (!runkDiv) return;
